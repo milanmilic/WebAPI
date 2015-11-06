@@ -26,7 +26,7 @@ namespace WebAPIDemo.Models
 
         public Order GetOrder(int id)
         {
-            return db.Orders.Include("OrderDetail.Book").FirstOrDefault(o => o.Id == id);
+            return db.Orders.Include("OrderDetail.Book").FirstOrDefault(o => o.Id == id); 
         }
     }
 }
